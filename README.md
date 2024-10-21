@@ -1,3 +1,5 @@
+![logo](https://github.com/miteshanshu/miteshanshu/blob/main/banner.gif)
+
 <h1 align="center">Hi 👋, I'm Mitesh Kr Anshu</h1>
 <h3 align="center">A developer from India</h3>
 
