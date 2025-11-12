@@ -18,14 +18,14 @@ const mitesh = {
 
 ### 🔥 Recent Projects That Actually Work
 
-**🤖 [CodePulse](https://github.com/miteshanshu/CodePulse)** - AI interview prep that doesn't suck  
-`React 19 + TypeScript + Google GenAI` → Mock interviews, resume analysis, company insights
-
-**🛒 [Wallet Wing](https://github.com/miteshanshu/wallet-wing)** - E-commerce that's actually fast  
-`React + Redux + Firebase` → 90+ Lighthouse score, real-time everything, dark mode included
-
 **👨‍🏫 [Student-Teacher Connect](https://github.com/miteshanshu/Student--Teacher-Connect)** - No more "I forgot the assignment" excuses  
 `React + Node.js + MongoDB Atlas` → Teachers post assignments, students filter by subject, everyone's happy
+
+**🛒 [Wallet Wing](https://github.com/miteshanshu/WalletWing)** - E-commerce that's actually fast  
+`React + Redux + Firebase` → 90+ Lighthouse score, real-time everything, dark mode included
+
+**🤖 [CodePulse](https://github.com/miteshanshu/CodePulse-AI-Powered-Interview-Coach)** - AI interview prep that doesn't suck  
+`React 19 + TypeScript + Google GenAI` → Mock interviews, resume analysis, company insights
 
 **📚 [Library Management Database](https://github.com/miteshanshu/Library-Management-System)** - Made check-outs 65% faster  
 `PostgreSQL 14+` → End-to-end schema with views, procedures, automated circulation for campus-scale libraries
