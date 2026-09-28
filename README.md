@@ -1,5 +1,18 @@
 ![Mitesh Kumar Anshu - developer and writer](./assets/profile-banner.svg)
 
+<p align="center">
+  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" title="JavaScript" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" title="React" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" title="Node.js" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/express/8B949E" alt="Express" title="Express" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/openjdk/E76F00" alt="Java" title="Java" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" title="MySQL" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" title="PostgreSQL" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" title="MongoDB" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/vercel/8B949E" alt="Vercel" title="Vercel" width="28" height="28" />
+  <img src="https://cdn.simpleicons.org/render/8B949E" alt="Render" title="Render" width="28" height="28" />
+</p>
+
 I build web apps, and I write stories. The work is different, but I keep coming back to the same question: what belongs here, and what can I leave out?
 
 My usual stack is **React, Node.js, Express and PostgreSQL**. I also write Java. I care about the small decisions between the screen and the database - the parts that either make a product feel easy or get in someone's way.
