@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="430" viewBox="0 0 1280 430" role="img" aria-labelledby="title desc">
+<title id="title">Mitesh Kumar Anshu - code and stories</title>
+<desc id="desc">Deep blue banner with a fluid indigo and violet painted shape on the right.</desc>
+<defs>
+  <linearGradient id="night" x2="1" y2="1"><stop stop-color="#0c132d"/><stop offset="1" stop-color="#16153c"/></linearGradient>
+  <radialGradient id="paint"><stop stop-color="#84d4fa" stop-opacity=".83"/><stop offset=".32" stop-color="#676df1" stop-opacity=".82"/><stop offset=".7" stop-color="#9945bd" stop-opacity=".56"/><stop offset="1" stop-color="#a736ae" stop-opacity="0"/></radialGradient>
+  <radialGradient id="rose"><stop stop-color="#e890d4" stop-opacity=".66"/><stop offset="1" stop-color="#bd518c" stop-opacity="0"/></radialGradient>
+  <filter id="wash" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency=".013" numOctaves="3" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="48"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<rect width="1280" height="430" fill="url(#night)"/>
+<g filter="url(#soft)" opacity=".9"><ellipse cx="989" cy="185" rx="350" ry="182" fill="url(#paint)"/><ellipse cx="1130" cy="285" rx="200" ry="125" fill="url(#rose)"/></g>
+<g filter="url(#wash)" opacity=".64"><path d="M838 308 C768 212 839 103 973 65 C1116 23 1189 110 1257 120 C1266 268 1152 397 969 371 C916 362 867 346 838 308Z" fill="url(#paint)"/></g>
+<path d="M769 316 C865 375 1085 392 1215 257" fill="none" stroke="#b1d4ff" stroke-width="2" opacity=".33"/>
+<path d="M840 105 C965 55 1117 65 1207 133" fill="none" stroke="#e9b0fa" stroke-width="2" opacity=".22"/>
+<text x="77" y="92" fill="#afbfde" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="4">DEVELOPER  /  WRITER</text>
+<text x="73" y="206" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="700" letter-spacing="-4">Mitesh Kumar</text>
+<text x="73" y="300" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="700" letter-spacing="-4">Anshu.</text>
+<path d="M77 341 H565" stroke="#aab5d3" opacity=".42"/>
+<text x="77" y="377" fill="#c5d3ee" font-family="Arial, Helvetica, sans-serif" font-size="22">Interfaces, APIs, and stories.</text>
+</svg>
