@@ -9,8 +9,6 @@
   <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" title="MySQL" width="28" height="28" />
   <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" title="PostgreSQL" width="28" height="28" />
   <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" title="MongoDB" width="28" height="28" />
-  <img src="https://cdn.simpleicons.org/vercel/8B949E" alt="Vercel" title="Vercel" width="28" height="28" />
-  <img src="https://cdn.simpleicons.org/render/8B949E" alt="Render" title="Render" width="28" height="28" />
 </p>
 
 I build web apps, and I write stories. The work is different, but I keep coming back to the same question: what belongs here, and what can I leave out?
