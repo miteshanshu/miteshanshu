@@ -52,7 +52,7 @@ def collect():
   if len(items)>=result['total_count']:break
   if len(items)>=1000:raise RuntimeError('Merge search exceeds search limit')
   page+=1
- external=[x for x in items if x['repository_url'].split('/repos/')[1].split('/')[0].lower()!=USER.lower()]
+ external=[x for x in items if x.get('user',{}).get('login','').lower()==USER.lower() and x.get('pull_request',{}).get('merged_at') and x['repository_url'].split('/repos/')[1].split('/')[0].lower()!=USER.lower()]
  repos=[];page=1
  while True:
   batch=fetch(f'https://api.github.com/users/{USER}/repos?per_page=100&type=owner&page={page}');repos+=batch
@@ -64,7 +64,7 @@ def collect():
  total=sum(languages.values())
  if not total:raise RuntimeError('No language bytes returned')
  percentages={k:round(v/total*100,1) for k,v in languages.most_common()}
- return {'date':today.isoformat(),'year':today.year,'streak':streak,'contributions':sum(n for d,n in days.items() if d.startswith(str(today.year)) and d<=today.isoformat()),'active30':sum(d['count']>0 for d in latest),'last30':latest,'external':len(external),'external_repos':len(set(x['repository_url'] for x in external)),'project_names':list(dict.fromkeys(x['repository_url'].split('/')[-1] for x in external)),'languages':percentages,'sources':[url,f'https://api.github.com/users/{USER}/repos',f'https://api.github.com/search/issues?q=author%3A{USER}+is%3Apr+is%3Amerged+is%3Apublic']}
+ return {'date':today.isoformat(),'year':today.year,'streak':streak,'contributions':sum(n for d,n in days.items() if d.startswith(str(today.year)) and d<=today.isoformat()),'active30':sum(d['count']>0 for d in latest),'last30':latest,'external':len(external),'external_repos':len(set(x['repository_url'] for x in external)),'project_names':list(dict.fromkeys(x['repository_url'].split('/')[-1] for x in external)),'languages':percentages,'external_prs':[{'repo':x['repository_url'].split('/repos/')[1], 'number':x['number'], 'url':x['html_url']} for x in external],'sources':[url,f'https://api.github.com/users/{USER}/repos',f'https://api.github.com/search/issues?q=author%3A{USER}+is%3Apr+is%3Amerged+is%3Apublic']}
 
 import datetime as dt,html
 
@@ -92,8 +92,42 @@ def render(data,dark=False):
   t(584,y,name,12);t(830,y,str(pct)+'%',12,600);o[-1]=o[-1].replace('<text ','<text text-anchor="end" ');r(681,y-8,70,5,track,rx=2);r(681,y-8,70*pct/100,5,muted,rx=2)
  t(584,372,f'Other {other}% · byte share, not proficiency',10,400,muted);t(1,413,'Public GitHub data · calendar days follow GitHub · languages exclude forks',11,400,muted);o.append('</svg>');return ''.join(o)
 
+
+PR_START='<!-- merged-prs:start -->'
+PR_END='<!-- merged-prs:end -->'
+def update_pr_section(text, prs):
+ if text.count(PR_START)!=1 or text.count(PR_END)!=1:
+  raise RuntimeError('README requires exactly one merged-PR marker pair')
+ before,rest=text.split(PR_START,1);old,after=rest.split(PR_END,1)
+ # Preserve the existing project labels/order, then append newly merged projects.
+ labels={}
+ for label,url in re.findall(r'\[([^\]]+) #\d+\]\((https://github\.com/[^/]+/[^/]+/pull/\d+)\)',old):
+  labels['/'.join(url.split('/')[3:5])]=label
+ grouped={repo:[] for repo in labels}
+ seen=set()
+ for pr in prs:
+  repo=pr['repo'];number=pr['number'];url=pr['url']
+  if (not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+',repo)
+      or not isinstance(number,int) or number<1
+      or url!=f'https://github.com/{repo}/pull/{number}'
+      or repo.split('/')[0].lower()==USER.lower()):
+   raise RuntimeError('Invalid external merged PR record')
+  if url in seen:continue
+  seen.add(url);grouped.setdefault(repo,[]).append(pr)
+ parts=[]
+ for repo,items in grouped.items():
+  if not items:continue
+  name=labels.get(repo,repo.split('/')[1]);links=[]
+  for i,pr in enumerate(sorted(items,key=lambda p:p['number'])):
+   label=(name+' ' if i==0 else '')+'#'+str(pr['number'])
+   links.append(f"[{label}]({pr['url']})")
+  parts.append(', '.join(links))
+ body=' · '.join(parts) if parts else 'No merged external PRs yet.'
+ return before+PR_START+'\n'+body+'\n'+PR_END+after
+
 if __name__=='__main__':
- data=collect();assets=ROOT/'assets';assets.mkdir(exist_ok=True)
+ data=collect();readme=ROOT/'README.md';original=readme.read_text();updated=update_pr_section(original,data['external_prs']);assets=ROOT/'assets';assets.mkdir(exist_ok=True)
  for theme in ['light','dark']:(assets/f'github-activity-{theme}.svg').write_text(render(data,theme=='dark'))
  (assets/'github-activity-data.json').write_text(json.dumps(data,indent=2)+'\n')
- print('Generated light and dark assets for '+data['date'])
+ if updated!=original:readme.write_text(updated)
+ print('Generated activity assets and merged PR links for '+data['date'])
