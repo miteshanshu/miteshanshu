@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-05",
+  "year": 2026,
+  "streak": 9,
+  "contributions": 170,
+  "active30": 9,
+  "last30": [
+    {
+      "date": "2026-09-06",
+      "count": 0
+    },
+    {
+      "date": "2026-09-07",
+      "count": 0
+    },
+    {
+      "date": "2026-09-08",
+      "count": 0
+    },
+    {
+      "date": "2026-09-09",
+      "count": 0
+    },
+    {
+      "date": "2026-09-10",
+      "count": 0
+    },
+    {
+      "date": "2026-09-11",
+      "count": 0
+    },
+    {
+      "date": "2026-09-12",
+      "count": 0
+    },
+    {
+      "date": "2026-09-13",
+      "count": 0
+    },
+    {
+      "date": "2026-09-14",
+      "count": 0
+    },
+    {
+      "date": "2026-09-15",
+      "count": 0
+    },
+    {
+      "date": "2026-09-16",
+      "count": 0
+    },
+    {
+      "date": "2026-09-17",
+      "count": 0
+    },
+    {
+      "date": "2026-09-18",
+      "count": 0
+    },
+    {
+      "date": "2026-09-19",
+      "count": 0
+    },
+    {
+      "date": "2026-09-20",
+      "count": 0
+    },
+    {
+      "date": "2026-09-21",
+      "count": 0
+    },
+    {
+      "date": "2026-09-22",
+      "count": 0
+    },
+    {
+      "date": "2026-09-23",
+      "count": 0
+    },
+    {
+      "date": "2026-09-24",
+      "count": 0
+    },
+    {
+      "date": "2026-09-25",
+      "count": 0
+    },
+    {
+      "date": "2026-09-26",
+      "count": 0
+    },
+    {
+      "date": "2026-09-27",
+      "count": 3
+    },
+    {
+      "date": "2026-09-28",
+      "count": 18
+    },
+    {
+      "date": "2026-09-29",
+      "count": 3
+    },
+    {
+      "date": "2026-09-30",
+      "count": 12
+    },
+    {
+      "date": "2026-10-01",
+      "count": 8
+    },
+    {
+      "date": "2026-10-02",
+      "count": 6
+    },
+    {
+      "date": "2026-10-03",
+      "count": 4
+    },
+    {
+      "date": "2026-10-04",
+      "count": 5
+    },
+    {
+      "date": "2026-10-05",
+      "count": 17
+    }
+  ],
+  "external": 5,
+  "external_repos": 4,
+  "project_names": [
+    "PdfZero",
+    "career-ops",
+    "rolecraft",
+    "platypus"
+  ],
+  "languages": {
+    "JavaScript": 56.2,
+    "TypeScript": 31.7,
+    "CSS": 4.4,
+    "C#": 4.3,
+    "PLpgSQL": 1.6,
+    "Python": 0.9,
+    "HTML": 0.5,
+    "Java": 0.4,
+    "PowerShell": 0.1
+  },
+  "sources": [
+    "https://github.com/users/miteshanshu/contributions?from=2026-01-01&to=2026-10-05",
+    "https://api.github.com/users/miteshanshu/repos",
+    "https://api.github.com/search/issues?q=author%3Amiteshanshu+is%3Apr+is%3Amerged+is%3Apublic"
+  ]
+}
