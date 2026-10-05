@@ -33,7 +33,7 @@ jobs:
           user_id=$(gh api users/miteshanshu --jq .id)
           git config user.name miteshanshu
           git config user.email "${user_id}+miteshanshu@users.noreply.github.com"
-          git add assets/github-activity-light.svg assets/github-activity-dark.svg assets/github-activity-data.json
+          git add assets/github-activity-light.svg assets/github-activity-dark.svg assets/github-activity-data.json README.md
           if git diff --cached --quiet; then
             exit 0
           fi
