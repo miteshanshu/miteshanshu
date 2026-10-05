@@ -86,7 +86,7 @@ def render(data,dark=False):
    t(584,y+28,'Current streak',14,600);t(584,y+65,str(n)+' days',23,600,ink);t(683,y+65,'Contribution days',11,400,muted)
   else:
    t(584,y+41,n,34,600,accent);t(682,y+33,label,14,600);t(682,y+57,sub,11,400,muted)
- panel(1,267,550,119,'Merged outside my own repos');t(19,330,data['external'],32,600,accent);t(66,329,f'PRs across {data["external_repos"]} projects',14,600);t(19,356,' · '.join(data['project_names'][:4]),12,400,muted);panel(565,267,314,119,'Languages in public code')
+ panel(1,267,550,119,'Merged outside my own repos');t(19,330,data['external'],32,600,accent);t(66,329,f'PRs across {data["external_repos"]} projects',14,600);t(19,356,'Public merged contributions',12,400,muted);panel(565,267,314,119,'Languages in public code')
  shown=list(data['languages'].items())[:2];other=round(100-sum(v for k,v in shown),1)
  for y,(name,pct) in zip([318,347],shown):
   t(584,y,name,12);t(830,y,str(pct)+'%',12,600);o[-1]=o[-1].replace('<text ','<text text-anchor="end" ');r(681,y-8,70,5,track,rx=2);r(681,y-8,70*pct/100,5,muted,rx=2)
