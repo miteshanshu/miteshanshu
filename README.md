@@ -21,7 +21,9 @@ Open to full-time roles in Delhi NCR (or remote).
 
 ### Merged open-source work
 
+<!-- merged-prs:start -->
 [PdfZero #9](https://github.com/bevinkatti/PdfZero/pull/9) · [career-ops #4728](https://github.com/career-ops-hq/career-ops/pull/4728) · [Platypus #1149](https://github.com/willdady/platypus/pull/1149) · [RoleCraft #360](https://github.com/rolecraft-sh/rolecraft/pull/360), [#365](https://github.com/rolecraft-sh/rolecraft/pull/365)
+<!-- merged-prs:end -->
 
 
 
