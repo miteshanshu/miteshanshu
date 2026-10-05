@@ -37,7 +37,7 @@ My usual stack is **React, Node.js, Express and PostgreSQL**. I also write Java.
 A library system built around the people who use it: students, librarians and admins. React, Express and PostgreSQL; separate workflows for loans, returns and overdue items.
 
 **02 / [Shringaar Studio](https://shringaar-studio-site.vercel.app/)**  
-A photo-led React site for a nail studio. I wanted the studio's actual work to carry the page, not a wall of generic salon copy. [See the code](https://github.com/miteshanshu/shringaar-studio-site). This is a concept for studio review, not its approved website.
+A photo-led React site for a nail studio. I wanted the studio's actual work to carry the page, not a wall of generic salon copy. This is a concept for studio review, not its approved website.
 
 **03 / [Smart Billing Engine](https://github.com/miteshanshu/java-oop-billing-engine)**  
 A smaller Java project about a deceptively tricky thing: how billing and discount rules should fit together.
@@ -48,4 +48,4 @@ A smaller Java project about a deceptively tricky thing: how billing and discoun
 
 I write fiction as **ANSHU**. *Sukoon* is my debut novel, and *Teen Kinare*, a Hindi novella, is in progress. It gives me another way to think about pacing and what to leave out.
 
-If something here speaks to you, [email me](mailto:miteshanshu1@gmail.com) or find me on [LinkedIn](https://linkedin.com/in/miteshanshu).
+If something here speaks to you, [email me](mailto:miteshanshu1@gmail.com), find me on [LinkedIn](https://linkedin.com/in/miteshanshu) or [X](https://x.com/miteshanshu_dev), or read my [Substack](https://miteshanshu.substack.com).
