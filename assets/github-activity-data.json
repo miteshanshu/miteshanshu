@@ -2,7 +2,7 @@
   "date": "2026-10-05",
   "year": 2026,
   "streak": 9,
-  "contributions": 170,
+  "contributions": 171,
   "active30": 9,
   "last30": [
     {
@@ -123,7 +123,7 @@
     },
     {
       "date": "2026-10-05",
-      "count": 17
+      "count": 18
     }
   ],
   "external": 5,
@@ -135,16 +135,43 @@
     "platypus"
   ],
   "languages": {
-    "JavaScript": 56.2,
+    "JavaScript": 56.1,
     "TypeScript": 31.7,
     "CSS": 4.4,
     "C#": 4.3,
     "PLpgSQL": 1.6,
-    "Python": 0.9,
+    "Python": 1.0,
     "HTML": 0.5,
     "Java": 0.4,
     "PowerShell": 0.1
   },
+  "external_prs": [
+    {
+      "repo": "bevinkatti/PdfZero",
+      "number": 9,
+      "url": "https://github.com/bevinkatti/PdfZero/pull/9"
+    },
+    {
+      "repo": "career-ops-hq/career-ops",
+      "number": 4728,
+      "url": "https://github.com/career-ops-hq/career-ops/pull/4728"
+    },
+    {
+      "repo": "rolecraft-sh/rolecraft",
+      "number": 365,
+      "url": "https://github.com/rolecraft-sh/rolecraft/pull/365"
+    },
+    {
+      "repo": "rolecraft-sh/rolecraft",
+      "number": 360,
+      "url": "https://github.com/rolecraft-sh/rolecraft/pull/360"
+    },
+    {
+      "repo": "willdady/platypus",
+      "number": 1149,
+      "url": "https://github.com/willdady/platypus/pull/1149"
+    }
+  ],
   "sources": [
     "https://github.com/users/miteshanshu/contributions?from=2026-01-01&to=2026-10-05",
     "https://api.github.com/users/miteshanshu/repos",
