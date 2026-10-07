@@ -5,7 +5,7 @@ on:
       - scripts/update_profile.py
       - .github/workflows/update-profile.yml
   schedule:
-    - cron: '17 2 * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
