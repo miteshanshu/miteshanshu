@@ -22,7 +22,7 @@ Open to full-time roles in Delhi NCR (or remote).
 ### Merged open-source work
 
 <!-- merged-prs:start -->
-[PdfZero #9: Add keyboard shortcuts help overlay (merged 2026-10-04)](https://github.com/bevinkatti/PdfZero/pull/9) · [career-ops #4728: test: import the retrying rmSync in the five doctor suites (merged 2026-10-03)](https://github.com/career-ops-hq/career-ops/pull/4728) · [Platypus #1149: fix(frontend): keep cached data during pull-to-refresh (merged 2026-09-29)](https://github.com/willdady/platypus/pull/1149) · [RoleCraft #360: test: cover global scope of assertNoSlugCollision (merged 2026-09-30)](https://github.com/rolecraft-sh/rolecraft/pull/360), [RoleCraft #365: ci: run test matrix on macos-latest (merged 2026-09-30)](https://github.com/rolecraft-sh/rolecraft/pull/365) · [freeCodeCamp #70721: fix(curriculum): test non-leap years not divisible by 4 (merged 2026-10-07)](https://github.com/freeCodeCamp/freeCodeCamp/pull/70721)
+[freeCodeCamp #70721](https://github.com/freeCodeCamp/freeCodeCamp/pull/70721) · [PdfZero #9](https://github.com/bevinkatti/PdfZero/pull/9) · [career-ops #4728](https://github.com/career-ops-hq/career-ops/pull/4728) · [rolecraft #360](https://github.com/rolecraft-sh/rolecraft/pull/360), [rolecraft #365](https://github.com/rolecraft-sh/rolecraft/pull/365) · [platypus #1149](https://github.com/willdady/platypus/pull/1149)
 <!-- merged-prs:end -->
 
 
