@@ -118,8 +118,8 @@ def update_pr_section(text, prs):
  for repo,items in grouped.items():
   if not items:continue
   name=labels.get(repo,repo.split('/')[1]);links=[]
-  for i,pr in enumerate(sorted(items,key=lambda p:p['number'])):
-   label=f"{name} #{pr['number']}: {pr['title']} (merged {pr['merged_at'][:10]})"
+  for pr in sorted(items,key=lambda p:p['number']):
+   label=f"{name} #{pr['number']}"
    links.append(f"[{label}]({pr['url']})")
   parts.append(', '.join(links))
  body=' · '.join(parts) if parts else 'No merged external PRs yet.'
