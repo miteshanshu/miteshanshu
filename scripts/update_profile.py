@@ -64,7 +64,7 @@ def collect():
  total=sum(languages.values())
  if not total:raise RuntimeError('No language bytes returned')
  percentages={k:round(v/total*100,1) for k,v in languages.most_common()}
- return {'date':today.isoformat(),'year':today.year,'streak':streak,'contributions':sum(n for d,n in days.items() if d.startswith(str(today.year)) and d<=today.isoformat()),'active30':sum(d['count']>0 for d in latest),'last30':latest,'external':len(external),'external_repos':len(set(x['repository_url'] for x in external)),'project_names':list(dict.fromkeys(x['repository_url'].split('/')[-1] for x in external)),'languages':percentages,'external_prs':[{'repo':x['repository_url'].split('/repos/')[1], 'number':x['number'], 'url':x['html_url']} for x in external],'sources':[url,f'https://api.github.com/users/{USER}/repos',f'https://api.github.com/search/issues?q=author%3A{USER}+is%3Apr+is%3Amerged+is%3Apublic']}
+ return {'date':today.isoformat(),'year':today.year,'streak':streak,'contributions':sum(n for d,n in days.items() if d.startswith(str(today.year)) and d<=today.isoformat()),'active30':sum(d['count']>0 for d in latest),'last30':latest,'external':len(external),'external_repos':len(set(x['repository_url'] for x in external)),'project_names':list(dict.fromkeys(x['repository_url'].split('/')[-1] for x in external)),'languages':percentages,'external_prs':[{'repo':x['repository_url'].split('/repos/')[1], 'number':x['number'], 'url':x['html_url'], 'title':x['title'], 'merged_at':x['pull_request']['merged_at']} for x in external],'sources':[url,f'https://api.github.com/users/{USER}/repos',f'https://api.github.com/search/issues?q=author%3A{USER}+is%3Apr+is%3Amerged+is%3Apublic']}
 
 import datetime as dt,html
 
@@ -119,7 +119,7 @@ def update_pr_section(text, prs):
   if not items:continue
   name=labels.get(repo,repo.split('/')[1]);links=[]
   for i,pr in enumerate(sorted(items,key=lambda p:p['number'])):
-   label=(name+' ' if i==0 else '')+'#'+str(pr['number'])
+   label=f"{name} #{pr['number']}: {pr['title']} (merged {pr['merged_at'][:10]})"
    links.append(f"[{label}]({pr['url']})")
   parts.append(', '.join(links))
  body=' · '.join(parts) if parts else 'No merged external PRs yet.'
