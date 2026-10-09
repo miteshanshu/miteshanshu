@@ -1,9 +1,9 @@
 {
   "date": "2026-10-09",
   "year": 2026,
-  "streak": 11,
-  "contributions": 185,
-  "active30": 11,
+  "streak": 12,
+  "contributions": 187,
+  "active30": 12,
   "last30": [
     {
       "date": "2026-09-10",
@@ -123,15 +123,15 @@
     },
     {
       "date": "2026-10-09",
-      "count": 0
+      "count": 2
     }
   ],
-  "external": 6,
+  "external": 7,
   "external_repos": 5,
   "project_names": [
     "freeCodeCamp",
-    "PdfZero",
     "career-ops",
+    "PdfZero",
     "rolecraft",
     "platypus"
   ],
@@ -153,6 +153,13 @@
       "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70721",
       "title": "fix(curriculum): test non-leap years not divisible by 4",
       "merged_at": "2026-10-07T14:55:09Z"
+    },
+    {
+      "repo": "career-ops-hq/career-ops",
+      "number": 4807,
+      "url": "https://github.com/career-ops-hq/career-ops/pull/4807",
+      "title": "fix(scan): keep the first row of a headerless scan-history.tsv",
+      "merged_at": "2026-10-09T06:28:52Z"
     },
     {
       "repo": "bevinkatti/PdfZero",
