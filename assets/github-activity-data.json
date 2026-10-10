@@ -2,7 +2,7 @@
   "date": "2026-10-10",
   "year": 2026,
   "streak": 13,
-  "contributions": 193,
+  "contributions": 197,
   "active30": 13,
   "last30": [
     {
@@ -115,7 +115,7 @@
     },
     {
       "date": "2026-10-08",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-10-09",
@@ -123,12 +123,13 @@
     },
     {
       "date": "2026-10-10",
-      "count": 1
+      "count": 4
     }
   ],
-  "external": 7,
-  "external_repos": 5,
+  "external": 8,
+  "external_repos": 6,
   "project_names": [
+    "kinshow",
     "freeCodeCamp",
     "career-ops",
     "PdfZero",
@@ -147,6 +148,13 @@
     "PowerShell": 0.1
   },
   "external_prs": [
+    {
+      "repo": "kiinshuk/kinshow",
+      "number": 432,
+      "url": "https://github.com/kiinshuk/kinshow/pull/432",
+      "title": "fix: guard localStorage schema version",
+      "merged_at": "2026-10-10T11:44:56Z"
+    },
     {
       "repo": "freeCodeCamp/freeCodeCamp",
       "number": 70721,

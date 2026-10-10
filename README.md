@@ -22,7 +22,7 @@ Open to full-time roles in Delhi NCR (or remote).
 ### Merged open-source work
 
 <!-- merged-prs:start -->
-[freeCodeCamp #70721](https://github.com/freeCodeCamp/freeCodeCamp/pull/70721) · [PdfZero #9](https://github.com/bevinkatti/PdfZero/pull/9) · [career-ops #4728](https://github.com/career-ops-hq/career-ops/pull/4728), [career-ops #4807](https://github.com/career-ops-hq/career-ops/pull/4807) · [rolecraft #360](https://github.com/rolecraft-sh/rolecraft/pull/360), [rolecraft #365](https://github.com/rolecraft-sh/rolecraft/pull/365) · [platypus #1149](https://github.com/willdady/platypus/pull/1149)
+[freeCodeCamp #70721](https://github.com/freeCodeCamp/freeCodeCamp/pull/70721) · [PdfZero #9](https://github.com/bevinkatti/PdfZero/pull/9) · [career-ops #4728](https://github.com/career-ops-hq/career-ops/pull/4728), [career-ops #4807](https://github.com/career-ops-hq/career-ops/pull/4807) · [rolecraft #360](https://github.com/rolecraft-sh/rolecraft/pull/360), [rolecraft #365](https://github.com/rolecraft-sh/rolecraft/pull/365) · [platypus #1149](https://github.com/willdady/platypus/pull/1149) · [kinshow #432](https://github.com/kiinshuk/kinshow/pull/432)
 <!-- merged-prs:end -->
 
 
