@@ -2,7 +2,7 @@
   "date": "2026-10-17",
   "year": 2026,
   "streak": 20,
-  "contributions": 233,
+  "contributions": 235,
   "active30": 20,
   "last30": [
     {
@@ -123,12 +123,13 @@
     },
     {
       "date": "2026-10-17",
-      "count": 5
+      "count": 7
     }
   ],
-  "external": 8,
-  "external_repos": 6,
+  "external": 9,
+  "external_repos": 7,
   "project_names": [
+    "activist",
     "kinshow",
     "freeCodeCamp",
     "career-ops",
@@ -148,6 +149,13 @@
     "PowerShell": 0.1
   },
   "external_prs": [
+    {
+      "repo": "activist-org/activist",
+      "number": 2449,
+      "url": "https://github.com/activist-org/activist/pull/2449",
+      "title": "Convert px values to rem and add units section to style guide",
+      "merged_at": "2026-10-17T17:16:00Z"
+    },
     {
       "repo": "kiinshuk/kinshow",
       "number": 432,
