@@ -2,7 +2,7 @@
   "date": "2026-10-20",
   "year": 2026,
   "streak": 23,
-  "contributions": 252,
+  "contributions": 254,
   "active30": 23,
   "last30": [
     {
@@ -123,7 +123,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 3
+      "count": 5
     }
   ],
   "external": 9,
@@ -138,14 +138,14 @@
     "platypus"
   ],
   "languages": {
-    "JavaScript": 56.5,
-    "TypeScript": 31.2,
-    "CSS": 4.4,
-    "C#": 4.3,
-    "PLpgSQL": 1.6,
-    "Python": 1.0,
-    "Java": 0.5,
-    "HTML": 0.4,
+    "JavaScript": 38.0,
+    "HTML": 33.0,
+    "TypeScript": 21.0,
+    "CSS": 3.0,
+    "C#": 2.9,
+    "PLpgSQL": 1.1,
+    "Python": 0.6,
+    "Java": 0.3,
     "PowerShell": 0.1
   },
   "external_prs": [
