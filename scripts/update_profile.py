@@ -74,12 +74,12 @@ def render(data,dark=False):
  def t(x,y,s,size=14,weight=400,color=None):o.append(f'<text x="{x}" y="{y}" font-family="Arial, Helvetica, sans-serif" font-size="{size}" font-weight="{weight}" fill="{color or ink}">{html.escape(str(s))}</text>')
  def r(x,y,w,h,fill,stroke='none',rx=4):o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}"/>')
  def panel(x,y,w,h,title):r(x,y,w,h,bg,border,6);t(x+18,y+28,title,14,600)
- t(1,26,'GitHub activity',20,600);t(647,25,'Updated '+data['date'],12,400,muted);panel(1,45,550,209,'Contribution activity · last 14 days')
- for i,d in enumerate(data['last30'][-14:]):
-  x=19+i*34;y=111;n=d['count'];level=0 if not n else 1 if n<4 else 2 if n<7 else 3 if n<12 else 4;r(x,y,25,25,heat[level],rx=2);col=ink if not n else ('#e6edf3' if level<3 else '#0d1117') if dark else ('#1f2328' if level<3 else 'white');
- start=dt.date.fromisoformat(data['last30'][-14]['date']).strftime('%d %b');end=dt.date.fromisoformat(data['date']).strftime('%d %b');t(19,203,f'{start} - {end}',12,400,muted);t(365,203,f'{sum(d["count"]>0 for d in data["last30"][-14:])} active days',12,600,accent);t(19,233,'Each square is one day on the GitHub calendar.',11,400,muted);t(19,166,'Less',11,400,muted)
- for i,c in enumerate(heat):r(51+i*19,155,13,13,c,rx=2)
- t(151,166,'More',11,400,muted)
+ t(1,26,'GitHub activity',20,600);t(647,25,'Updated '+data['date'],12,400,muted);panel(1,45,550,209,'Contribution activity · last 30 days')
+ for i,d in enumerate(data['last30']):
+  x=19+(i%15)*34;y=95+(i//15)*33;n=d['count'];level=0 if not n else 1 if n<4 else 2 if n<7 else 3 if n<12 else 4;r(x,y,25,25,heat[level],rx=2);col=ink if not n else ('#e6edf3' if level<3 else '#0d1117') if dark else ('#1f2328' if level<3 else 'white');
+ start=dt.date.fromisoformat(data['last30'][0]['date']).strftime('%d %b');end=dt.date.fromisoformat(data['date']).strftime('%d %b');t(19,205,f'{start} - {end}',12,400,muted);t(365,205,f'{data["active30"]} active days',12,600,accent);t(19,233,'Each square is one day on the GitHub calendar.',11,400,muted);t(19,175,'Less',11,400,muted)
+ for i,c in enumerate(heat):r(51+i*19,164,13,13,c,rx=2)
+ t(151,175,'More',11,400,muted)
  for y,n,label,sub in [(45,data['streak'],'Current streak','Contribution days'),(156,data['contributions'],str(data['year'])+' contributions','Public calendar total')]:
   r(565,y,314,98,bg,border,6)
   if label=='Current streak':
