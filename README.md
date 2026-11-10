@@ -48,4 +48,4 @@ A smaller Java project about a deceptively tricky thing: how billing and discoun
 
 I write fiction as **ANSHU**. *Sukoon* is my debut novel, and *Teen Kinare*, a Hindi novella, is in progress. It gives me another way to think about pacing and what to leave out.
 
-If something here speaks to you, [email me](mailto:miteshanshu1@gmail.com), find me on [LinkedIn](https://linkedin.com/in/miteshanshu) or [X](https://x.com/miteshanshu_dev), or read my [Substack](https://miteshanshu.substack.com).
+If something here speaks to you, [email me](mailto:miteshanshu1@gmail.com), find me on [LinkedIn](https://linkedin.com/in/miteshanshu) or [X](https://x.com/miteshanshu_dev), or read my [Substack](https://miteshanshu.substack.com). If my open source work has been useful to you, you can [sponsor it here](https://github.com/sponsors/miteshanshu).
