@@ -2,7 +2,7 @@
   "date": "2026-11-11",
   "year": 2026,
   "streak": 45,
-  "contributions": 389,
+  "contributions": 392,
   "active30": 30,
   "last30": [
     {
@@ -123,12 +123,13 @@
     },
     {
       "date": "2026-11-11",
-      "count": 8
+      "count": 11
     }
   ],
-  "external": 11,
-  "external_repos": 9,
+  "external": 12,
+  "external_repos": 10,
   "project_names": [
+    "neo",
     "flisk",
     "activist",
     "kinshow",
@@ -151,6 +152,13 @@
     "PowerShell": 0.1
   },
   "external_prs": [
+    {
+      "repo": "neomjs/neo",
+      "number": 20756,
+      "url": "https://github.com/neomjs/neo/pull/20756",
+      "title": "Update Medium list entry 78 to the ITNEXT publication (#20737)",
+      "merged_at": "2026-11-11T13:48:07Z"
+    },
     {
       "repo": "flisk-sh/flisk",
       "number": 3796,
