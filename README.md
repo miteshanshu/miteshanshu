@@ -34,20 +34,19 @@ My usual stack is **React, Node.js, Express and PostgreSQL**. I also write Java.
 ### The work
 
 **01 / [CircuLib](https://github.com/miteshanshu/Library-Management-System---RBAC)**  
-A library system built around the people who use it: students, librarians and admins. React, Express and PostgreSQL; separate workflows for loans, returns and overdue items.
+A library system built around the people who use it: students, librarians and admins. React, Express and PostgreSQL; separate workflows for loans, returns and overdue items. Open source under the MIT license.
 [Live demo](https://library-management-system-rbac.vercel.app/) · [Code](https://github.com/miteshanshu/Library-Management-System---RBAC). The server sleeps when idle, so the first login can take around 40 seconds.
 
-**02 / [WalletWing](https://github.com/miteshanshu/WalletWing)**  
+**02 / [Matbhed](https://matbhed.onrender.com)**  
+An anonymous live voice debate app. Two people pick opposite sides of a motion and get 7 minutes on open mics, with up to 8 listeners in the room. React, Node, Socket.IO and LiveKit. No sign-up.
+[Live app](https://matbhed.onrender.com)
+
+**03 / [WalletWing](https://github.com/miteshanshu/WalletWing)**  
 A React storefront with search, filters, cart, wishlist and product comparison, plus Firebase sign-in. Checkout is a demo, it never takes a real payment.  
 [Live demo](https://wallet-wing.vercel.app) · [Code](https://github.com/miteshanshu/WalletWing)
 
-**03 / [Shringaar Studio](https://shringaar-studio-site.vercel.app/)**  
+**04 / [Shringaar Studio](https://shringaar-studio-site.vercel.app/)**  
 A photo-led React site for a nail studio. I wanted the studio's actual work to carry the page, not a wall of generic salon copy. This is a concept for studio review, not its approved website.
-
-**04 / [Smart Billing Engine](https://github.com/miteshanshu/java-oop-billing-engine)**  
-A smaller Java project about a deceptively tricky thing: how billing and discount rules should fit together.
-
-[DevForge](https://github.com/miteshanshu/DevForge) is another work in progress - a place for developers to share projects and build logs.
 
 ### Away from the editor
 
